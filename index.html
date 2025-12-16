@@ -25,7 +25,8 @@ rel="stylesheet">
         <!-- logo -->
          <div class="flex gap-1 items-center py-2 px-2 cursor-pointer hover:opacity-80">
              <span class="fa-solid fa-bars-staggered"></span>
-                     <a class="font-logo" href="#"><span class=" fa-brands fa-dribbble"></span> Dribbble </a>
+                <span class=" fa-brands fa-dribbble"></span>
+                <a class="font-logo skew-x-4" href="#"> Dribbble </a>
          </div>
             
         <div class="">
@@ -35,46 +36,46 @@ rel="stylesheet">
         </div>
     </header>
     <main>
-        <section class="grid grid-cols-2 gap-4 px-4 justify-center items-center">
+        <section class="grid grid-cols-1 md:grid-cols-2  gap-4 px-4 justify-center items-center">
             <div class="flex flex-col items-center md:items-start justify-center text-center md:text-start h-[80vh] px-4">
                 <h1 class="heading text-5xl text-slate-600 font-semibold mb-4">
                 Discover the <br> World’s Top Designers
                 </h1>
-                <p class="w-xl ">Explore work from the most talented and accomplished designers ready to take on your next project.</p>
-                <div class="flex gap-8 mt-6 text-white hover:opacity-80 flex-wrap justify-center md:justify-start cursor-pointer">
-                    <button class="bg-gray-600 px-3 py-1 rounded-md">
+                <p class="md:w-3/4 w-full">Explore work from the most talented and accomplished designers ready to take on your next project.</p>
+                <div class="flex gap-8 mt-6 text-white flex-wrap justify-center md:justify-start items-center">
+                    <button class="bg-gray-600 px-3 py-1 rounded-md hover:bg-gray-300 hover:text-gray-950 cursor-pointer">
                         <span class="fa-regular fa-image"></span> Shorts
                     </button>
-                    <button class="bg-gray-600 px-3 py-1 rounded-md">
+                    <button class="bg-gray-600 px-3 py-1 rounded-md hover:bg-gray-300 hover:text-gray-950 cursor-pointer">
                         <span class="fa-solid fa-users"></span> Designers
                     </button>
-                    <button class="bg-gray-600 px-3 py-1 rounded-md">
+                    <button class="bg-gray-600 px-3 py-1 rounded-md hover:bg-gray-300 hover:text-gray-950 cursor-pointer">
                         <span class="fa-solid fa-book-open-reader"></span> Services
                     </button>
                     <div class="flex justify-between border border-gray-600 px-3 py-1 w-full rounded-full">
-                        <input type="text" class="placeholder:text-gray-700 w-[70%]" placeholder="What type of design you are interested in?">
-                        <div class="flex bg-red-200 p-1 rounded-[50%] w-[60px] h-[60px] ml-2">
-                            <span class=" inline-block self-center pl-4 text-lg fa-solid fa-magnifying-glass"></span>
+                        <input type="text" class="placeholder:text-gray-400 w-[70%]" placeholder="What type of design you are interested in?">
+                        <div class="flex cursor-pointer hover:bg-red-300 bg-red-200 p-1 rounded-[50%] w-[60px] h-[60px] ml-2">
+                            <span class=" inline-block self-center pl-4 text-lg fa-solid fa-magnifying-glass "></span>
                         </div>
                     </div>
                     <div class="">
                         <p>Popular:</p>
-                        <div class="">
-                            <span class="bg-gray-600 rounded-md px-2 py-1 mr-2">dashboard</span>
-                            <span class="bg-gray-600 rounded-md px-2 py-1 mr-2">landing Page</span>
-                            <span class="bg-gray-600 rounded-md px-2 py-1 mr-2">e-commerce</span>   
-                            <span class="bg-gray-600 rounded-md px-2 py-1 mr-2">logo</span>   
-                            <span class="bg-gray-600 rounded-md px-2 py-1 mr-2">card</span>   
-                            <span class="bg-gray-600 rounded-md px-2 py-1 mr-2">icons</span>   
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-gray-600 rounded-md px-3 py-2 mr-2 cursor-pointer hover:bg-slate-300 hover:text-slate-950">dashboard</span>
+                            <span class="bg-gray-600 rounded-md px-3 py-2 mr-2 cursor-pointer hover:bg-slate-300 hover:text-slate-950">landing Page</span>
+                            <span class="bg-gray-600 rounded-md px-3 py-2 mr-2 cursor-pointer hover:bg-slate-300 hover:text-slate-950">e-commerce</span>   
+                            <span class="bg-gray-600 rounded-md px-3 py-2 mr-2 cursor-pointer hover:bg-slate-300 hover:text-slate-950">logo</span>   
+                            <span class="bg-gray-600 rounded-md px-3 py-2 mr-2 cursor-pointer hover:bg-slate-300 hover:text-slate-950">card</span>   
+                            <span class="bg-gray-600 rounded-md px-3 py-2 mr-2 cursor-pointer hover:bg-slate-300 hover:text-slate-950">icons</span>   
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="border border-gray-600 h-[300px] overflow-hidden bg-[url(/bg-product.png)] bg-cover bg-center">
-                <p>emmbed video api from pexels</p>
-                <video src="https://api.pexels.com/videos/8YW44iONftedoVVZOo2HfSRHNT1y9LZCng7f3PBN1NoPpAhW5gqX32mE"></video>
+            <div class="border border-gray-600 h-[60vh] overflow-hidden rounded-lg flex justify-center items-center mr-3">
+                <img src="/bg.png" alt="">
             </div>
         </section>
     </main>
+    <script src="/index.js"></script>
   </body>
 </html>
