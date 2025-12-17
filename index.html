@@ -38,7 +38,7 @@ rel="stylesheet">
     <main>
         <section class="grid grid-cols-1 md:grid-cols-2  gap-4 px-4 justify-center items-center">
             <div class="flex flex-col items-center md:items-start justify-center text-center md:text-start h-[80vh] px-4">
-                <h1 class="heading text-5xl text-slate-600 font-semibold mb-4">
+                <h1 class="heading text-5xl text-blue-900 font-semibold mb-4">
                 Discover the <br> World’s Top Designers
                 </h1>
                 <p class="md:w-3/4 w-full">Explore work from the most talented and accomplished designers ready to take on your next project.</p>
@@ -55,7 +55,7 @@ rel="stylesheet">
                     <div class="flex justify-between border border-gray-600 px-3 py-1 w-full rounded-full">
                         <input type="text" class="placeholder:text-gray-400 w-[70%]" placeholder="What type of design you are interested in?">
                         <div class="flex cursor-pointer hover:bg-red-300 bg-red-200 p-1 rounded-[50%] w-[60px] h-[60px] ml-2">
-                            <span class=" inline-block self-center pl-4 text-lg fa-solid fa-magnifying-glass "></span>
+                            <span class=" inline-block self-center pl-4 text-lg fa-solid fa-magnifying-glass text-shadow-2xs"></span>
                         </div>
                     </div>
                     <div class="">
@@ -72,9 +72,45 @@ rel="stylesheet">
                 </div>
             </div>
             <div class="border border-gray-600 h-[60vh] overflow-hidden rounded-lg flex justify-center items-center mr-3">
-                <img src="/bg.png" alt="">
+                <!-- <img src="/bg.png" alt=""> -->
+                 <video src="https://cdn.dribbble.com/uploads/67236/original/74726306be0d0531ac2025fdc654c2c1.mp4?1765339763" poster="https://cdn.dribbble.com/uploads/67269/original/af0e4267217ffc7f59f0bf807a5b0498.jpeg?1765393123" preload="auto"></video>
             </div>
         </section>
+        <div class="">
+            <div class="flex justify-between border border-gray-600 px-3 py-1 w-full rounded-full">
+                <button type="submit">
+                        Hiring for a project?
+                </button>
+                        <input type="text" class="placeholder:text-gray-400 w-[70%]" placeholder="What type of design you are interested in?">
+                        <div class="flex cursor-pointer hover:bg-red-300 bg-red-200 p-1 rounded-[50%] w-[60px] h-[60px] ml-2">
+                            <span class=" inline-block self-center pl-4 text-lg fa-solid fa-magnifying-glass text-shadow-2xs"></span>
+                        </div>
+                    </div>
+        </div>
+        <div class="flex">
+            <select name="" id="">
+                <option value="">
+                    <a href="" class="">Discover</a>
+                    <a href="" class="">Animation</a>
+                    <a href="" class="">Branding</a>
+                    <a href="" class="">Illustration</a> 
+                    <a href="" class="">Mobile</a>
+                    <a href="" class="">Product Design</a>
+                    <a href="" class="">Wb Design</a>
+                </option>
+                <button ><span class="fa-solid fa-bars-staggered"></span> Filters</button>
+                <div class="hidden">
+                    <div class="">
+                        <label for="">Tags</label>
+                        <input type="text" placeholder="@tag, #tag">
+                    </div>
+                     <div class="">
+                        <label for="">Colors</label>
+                        <input type="text"  placeholder="Enter hex or select">
+                    </div>
+                </div>
+            </select>
+        </div>
     </main>
     <script src="/index.js"></script>
   </body>
