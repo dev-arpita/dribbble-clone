@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&family=Rubik+80s+Fade&family=Sevillana&display=swap" 
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
 rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <style>
@@ -15,13 +15,13 @@ rel="stylesheet">
         font-size: 1.5rem;
     }
     .heading{
-        font-family: "Rubik 80s Fade", system-ui;
+        font-family: "Montserrat", sans-serif;
     }
 </style>
     <script src="https://kit.fontawesome.com/f4c08ca399.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <header class="flex justify-between items-center p-4">
+  <body class="relative">
+    <header class="flex justify-between items-center p-4 fixed top-0 left-0 right-0 bg-white shadow-md z-10">
         <!-- logo -->
          <div class="flex gap-1 items-center py-2 px-2 cursor-pointer hover:opacity-80">
              <span class="fa-solid fa-bars-staggered"></span>
@@ -36,9 +36,9 @@ rel="stylesheet">
         </div>
     </header>
     <main class="px-12">
-        <section class="grid grid-cols-1 md:grid-cols-2  gap-4 px-4 justify-center items-center">
-            <div class="flex flex-col items-center md:items-start justify-center text-center md:text-start h-[80vh] px-4">
-                <h1 class="heading text-5xl text-blue-900 font-semibold mb-4">
+        <section class="grid grid-cols-1 lg:grid-cols-2  gap-4 px-4 justify-center items-center">
+            <div class="flex flex-col items-center md:items-start justify-center text-center md:text-start h-[80vh] px-4 md:mt-30 lg:mt-50 mt-20">
+                <h1 class="heading text-4xl md:text-5xl lg:text-6xl text-blue-900 font-semibold mb-4 leading-sung">
                 Discover the <br> World’s Top Designers
                 </h1>
                 <p class="md:w-3/4 w-full">Explore work from the most talented and accomplished designers ready to take on your next project.</p>
@@ -71,45 +71,56 @@ rel="stylesheet">
                     </div>
                 </div>
             </div>
-            <div class="border border-gray-600 h-[60vh] overflow-hidden rounded-lg flex justify-center items-center mr-3">
+            <div class="hidden h-[60vh] overflow-hidden rounded-lg lg:flex justify-center items-center mr-3 ">
                 <!-- <img src="/bg.png" alt=""> -->
                  <video src="https://cdn.dribbble.com/uploads/67236/original/74726306be0d0531ac2025fdc654c2c1.mp4?1765339763" poster="https://cdn.dribbble.com/uploads/67269/original/af0e4267217ffc7f59f0bf807a5b0498.jpeg?1765393123" preload="auto"></video>
             </div>
         </section>
         <div class="">
-            <div class="flex flex-col md:flex-row justify-start gap-x-10  px-3 py-1 w-full mt-10 md:mt-10 pt-8  rounded-full shadow-2xs mb-6">
-                <a href="#" class="w-[18rem] sm:w-[20rem] relative border border-gray-600 bg-gray-100 py-2 px-4 rounded-full hover:bg-gray-300 hover:text-gray-950 cursor-pointer mb-2 md:mb-0">
-                    <span class="fa-regular fa-star"></span>
+            <div class="flex lg:flex-row flex-wrap justify-start gap-x-8 gap-y-4  p-8 w-full mt-5 md:mt-8 bg-gray-100 rounded-lg shadow-2xs mb-6">
+                <a href="#" class="w-[300px] relative border border-gray-600 bg-gray-100 py-2 px-4 rounded-full hover:bg-gray-300 hover:text-gray-950 cursor-pointer mb-2 md:mb-0">
+                    <span class="fa-regular fa-star text-indigo-500"></span>
                         Start a Project Brief
                     <span class="bg-red-400 text-white absolute top-[-10px] rounded-xl px-1 right-0 text-xs">New</span>
                 </a>
                 <p>Tell us what you need and instantly connect with world-class talent ready to work on your project.</p>
             </div>
         </div>
-        <div class="flex">
-            <select name="" id="">
-                <option value="">
-                    <a href="" class="">Discover</a>
+        <!-- sec -->
+         <section class="h-[30vh] ">
+            <div class="flex lg:flex-row justify-between gap-6 px-4 mb-12">
+            
+            <label class="hidden" for="projects">Following</label>
+            <select name="projects" id="projects" class="border border-gray-200 px-2 py-1 rounded-md">
+            <option value="following">Following</option>
+            <option value="popular">Popular</option>
+            <option value="new & noteworthy">New & Noteworthy</option>
+            </select>
+
+                <div class="flex flex-row gap-4 items-center">
+                    <a href="" class="bg-indigo-100 rounded-full px-2 py-1">Discover</a>
                     <a href="" class="">Animation</a>
                     <a href="" class="">Branding</a>
                     <a href="" class="">Illustration</a> 
                     <a href="" class="">Mobile</a>
                     <a href="" class="">Product Design</a>
                     <a href="" class="">Wb Design</a>
-                </option>
-                <button ><span class="fa-solid fa-bars-staggered"></span> Filters</button>
-                <div class="hidden">
-                    <div class="">
-                        <label for="">Tags</label>
-                        <input type="text" placeholder="@tag, #tag">
-                    </div>
-                     <div class="">
-                        <label for="">Colors</label>
-                        <input type="text"  placeholder="Enter hex or select">
-                    </div>
                 </div>
-            </select>
-        </div>
+            <div class="">
+                <button class=" border border-gray-200 px-2 py-1 rounded-md"><span class="fa-solid fa-bars-staggered"></span> Filters</button>
+                    <div class="hidden grid-cols-2 gap-4 grid">
+                        <div class="">
+                            <label for="">Tags</label>
+                            <input type="text" placeholder="@tag, #tag">
+                        </div>
+                         <div class="">
+                            <label for="">Colors</label>
+                            <input type="text"  placeholder="Enter hex or select">
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </section>
     </main>
     <script src="/index.js"></script>
   </body>
