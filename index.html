@@ -51,8 +51,8 @@ rel="stylesheet">
                     <button class="bg-gray-600 px-3 py-1 rounded-md hover:bg-gray-300 hover:text-gray-950 cursor-pointer">
                         <span class="fa-solid fa-book-open-reader"></span> Services
                     </button>
-                    <div class="flex justify-between border border-gray-600 px-3 py-1 w-full rounded-full">
-                        <input type="text" class="placeholder:text-gray-400 w-[70%]" placeholder="What type of design you are interested in?">
+                    <div class="flex justify-between border border-gray-600 px-3 py-1 w-full rounded-full border lg:w-[500px] ">
+                        <input type="text" class="placeholder:text-gray-400 w-[60%]" placeholder="What type of design you are interested in?">
                         <div class="flex cursor-pointer hover:bg-red-300 bg-red-200 p-1 rounded-[50%] w-[60px] h-[60px] ml-2">
                             <span class=" inline-block self-center pl-4 text-lg fa-solid fa-magnifying-glass text-shadow-2xs"></span>
                         </div>
@@ -246,8 +246,8 @@ rel="stylesheet">
                 </div> 
             </div>
         </section>
-        <section class=".grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 mb-12">  
-            <div class=" flex flex-col justify-center items-center lg:items-start border border-gray-300 rounded-lg p-6 gap-4 hover:shadow-2xl cursor-pointer">     
+        <section class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 mb-12 border border-gray-300 rounded-lg">  
+            <div class=" flex flex-col justify-center items-center lg:items-start  p-6 gap-4 hover:shadow-2xl cursor-pointer">     
                 <!-- Dribbble logo -->
                 <div class="relative w-12 h-12 bg-red-400 rounded-[50%] flex flex-col justify-center items-center p-3 text-center">
                     <span class="text-3xl text-white fa-brands fa-dribbble"></span>
@@ -259,10 +259,23 @@ rel="stylesheet">
                 <p>Rank higher, skip the fees, level up your profile- All for $8/month </p>
                 <button class="bg-gray-900 px-4 py-2 text-white"><a href="#">Upgrade to Pro</a></button>
             </div>
-            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-4"></div>
-        
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-4">
+                <img class="w-md" src="/search.webp" alt="">
+                <img class="w-full" src="/projrcts-list.webp" alt="">
+                <img class="w-md" src="/self-work-pay.webp" alt="">
+                <img class="w-full" src="/subscription.webp" alt="">
+                <img class="w-full" src="/webflow-free.webp" alt="">
+            </div>
+            <div class="hidden absolute p-4 rounded-[50%] bg-gray-300 opacity-70">
+                <span class="origin-center rotate-90 fa-solid fa-chevron-down text-3xl text-black"></span>
+            </div>
+               <div class="absolute p-4 rounded-[50%] bg-gray-300 right-0 bottom-[40%] opacity-70">
+                <span class=" origin-center -rotate-90 fa-solid fa-chevron-down text-3xl text-black"></span>
+            </div>
         </section>
-        <div class="">
+        <!-- load more work -->
+        <div class="flex justify-center items-center mb-12">
+                <!-- card1 -->
 
             <!-- card2 -->
                 
@@ -275,15 +288,18 @@ rel="stylesheet">
                 <!-- card6 -->
             
                 <!-- card7 -->
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">  <a href="#">Load more work</a></button>
+            <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded">  
+                <a href="#">Load more work</a>
+            </button>
         </div>  
     </main>
 <footer class="bg-red-50">
-    <div class="md:flex gap-4 justify-aroung items-center p-4">
+    <div class="md:flex gap-4 justify-between items-center p-4">
         <!-- logo -->
-         <span class=" fa-brands fa-dribbble"></span>
-            <a class="font-logo skew-x-4" href="#"> Dribbble </a>
-             <div class="flex flex-row gap-4 items-center">
+   
+             <!-- <span class=" fa-brands fa-dribbble"></span> -->
+                <a class="font-logo skew-x-4" href="#"> Dribbble </a>
+             <div class="flex gap-4 items-center">
                         <a href="" class="hover:bg-indigo-100 hover:rounded-xl px-2 py-1 cursor-pointer">Discover</a>
                         <a href="" class="">Animation</a>
                         <a href="" class="">Branding</a>
@@ -294,7 +310,7 @@ rel="stylesheet">
                     </div>
         
          <!-- social links -->
-           <ul class=" flex gap-4 justify-end items-center">
+           <ul class=" flex gap-4 justify-center items-center">
             <li class=""><a href="#"><span class="fa-brands fa-instagram text-2xl"></span></a></li>
             <li class=""><a href="#"><span class="fa-brands fa-x-twitter text-2xl"></span></a></li>
             <li class=""><a href="#"><span class="fa-brands fa-facebook text-2xl"></span></a></li>
@@ -302,22 +318,23 @@ rel="stylesheet">
          </ul>
     </div>
      <!-- legal things -->
-     <div class="">
-        <ul class="">
-        <li class=""><a href="#">@2025 Dribble</a></li>
-        <li class=""><a href="#"></a>Terms</li>
-        <li class=""><a href="#">Privacy</a></li>
-        <li class=""><a href="#">Cookies</a></li>
-     </ul>
-     <!-- resources -->
-     <ul class="">
-        <li class=""><a href="#">Jobs</a></li>
-        <li class=""><a href="#">Designers</a></li>
-        <li class=""><a href="#">Freelancers</a></li>
-        <li class=""><a href="#">Tags</a></li>
-        <li class=""><a href="#">Places</a></li>
-        <li class=""><a href="#">Resources</a></li>
-     </ul>
+  
+        <div class="flex justify-between items-center p-4 gap-5 flex-wrap">
+            <ul class="flex gap-4 justify-center items-center text-gray-500">
+            <li class=""><a href="#">@2025 Dribble</a></li>
+            <li class=""><a href="#"></a>Terms</li>
+            <li class=""><a href="#">Privacy</a></li>
+            <li class=""><a href="#">Cookies</a></li>
+         </ul>
+         <!-- resources -->
+         <ul class="flex gap-4 justify-center items-center text-gray-500">
+            <li class=""><a href="#">Jobs</a></li>
+            <li class=""><a href="#">Designers</a></li>
+            <li class=""><a href="#">Freelancers</a></li>
+            <li class=""><a href="#">Tags</a></li>
+            <li class=""><a href="#">Places</a></li>
+            <li class=""><a href="#">Resources</a></li>
+         </ul>
      </div>
 </footer>
   </body>
