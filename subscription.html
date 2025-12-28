@@ -22,7 +22,7 @@ rel="stylesheet">
     <script src="https://kit.fontawesome.com/f4c08ca399.js" crossorigin="anonymous"></script>
   </head>
 <body class="text-gray-800 font-sans">
-    <section class="relative bg-red-50 hover:shadow-2xl grid grid-cols-1 md:grid-cols-2 gap-6 px-4 mb-12 border border-gray-300 rounded-lg">  
+    <section class="w-[100vw] relative bg-red-50 hover:shadow-2xl grid grid-cols-1 md:grid-cols-2 gap-6 px-4 mb-12 border border-gray-300 rounded-lg">  
             <div class="flex flex-col justify-center items-center lg:items-start  p-6 gap-4  cursor-pointer">     
                 <!-- Dribbble logo -->
                 <div class="relative w-12 h-12 bg-red-400 rounded-[50%] flex flex-col justify-center items-center p-3 text-center">
@@ -35,7 +35,8 @@ rel="stylesheet">
                 <p>Rank higher, skip the fees, level up your profile- All for $8/month </p>
                 <button class="bg-gray-900 px-4 py-2 text-white"><a href="#">Upgrade to Pro</a></button>
             </div>
-            <div class=" md:flex gap-4 w-[100vw] margin-y-auto items-center overflow-x-scroll scroll-smooth whitespace-nowrap px-4 py-6">
+            <!-- cards -->
+            <div id="imageContainer" class=" md:flex gap-4 w-[100vw] margin-y-auto items-center overflow-x-scroll shrink-0 scroll-smooth whitespace-nowrap px-4 py-6">
                 <div class="max-w-md flex flex-col justify-center items-center lg:items-start p-2 gap-4 hover:shadow-2xl cursor-pointer">
                     <img class="w-md" src="/img/search.webp" alt="">
                     <h3 class="font-bold text-lg"> <span class="text-xl fa-solid fa-arrow-trend-up"></span> Higher Search Rankings </h3>
@@ -63,12 +64,16 @@ rel="stylesheet">
                     <p class="text-sm" >Get 12 months free of Webflow’s Freelancer ($192 value) or <br> Agency ($420 value) plans.</p>
                 </div>
             </div>
-            <div class="hidden absolute p-4 rounded-[50%] bg-gray-300 opacity-70">
+            <button id="scrollLeftButton" onclick="scrollLeft()" class="hidden absolute p-4 rounded-[50%] bg-gray-300 opacity-70"
+              aria-label="Scroll left">
                 <span class="origin-center rotate-90 fa-solid fa-chevron-down text-3xl text-black"></span>
-            </div>
-               <div class="absolute p-4 rounded-[50%] bg-gray-300 right-0 bottom-[40%] opacity-70">
+            </button>
+            <button aria-label="Scroll right"  id="scrollRightButton"  onclick="scrollRight()" class="absolute p-4 rounded-[50%] bg-gray-300 right-0 bottom-[40%] opacity-70">
                 <span class=" origin-center -rotate-90 fa-solid fa-chevron-down text-3xl text-black"></span>
-            </div>
+            </button >
         </section>
+        <script src="index.js">
+         
+        </script>
 </body>
 </html>
