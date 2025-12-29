@@ -22,7 +22,7 @@ rel="stylesheet">
     <script src="https://kit.fontawesome.com/f4c08ca399.js" crossorigin="anonymous"></script>
   </head>
 <body class="text-gray-800 font-sans">
-    <section class="w-[100vw] relative bg-red-50 hover:shadow-2xl grid grid-cols-1 md:grid-cols-2 gap-6 px-4 mb-12 border border-gray-300 rounded-lg">  
+    <section class="w-[100vw] relative bg-red-50 grid grid-cols-1 md:grid-cols-2 gap-6 px-4 mb-12 border border-gray-300 rounded-lg">  
             <div class="flex flex-col justify-center items-center lg:items-start  p-6 gap-4  cursor-pointer">     
                 <!-- Dribbble logo -->
                 <div class="relative w-12 h-12 bg-red-400 rounded-[50%] flex flex-col justify-center items-center p-3 text-center">
@@ -37,40 +37,46 @@ rel="stylesheet">
             </div>
             <!-- cards -->
             <div id="imageContainer" class=" md:flex gap-4 w-[100vw] margin-y-auto items-center overflow-x-scroll shrink-0 scroll-smooth whitespace-nowrap px-4 py-6">
-                <div class="max-w-md flex flex-col justify-center items-center lg:items-start p-2 gap-4 hover:shadow-2xl cursor-pointer">
+                <div class="max-w-md flex flex-col justify-center items-center lg:items-start p-2 gap-4 ">
                     <img class="w-md" src="/img/search.webp" alt="">
                     <h3 class="font-bold text-lg"> <span class="text-xl fa-solid fa-arrow-trend-up"></span> Higher Search Rankings </h3>
                     <p class=" text-sm">Get your profile, services, and design work in front of <br> clients searching for designers to hire.</p>
                 </div>
-                <div class="max-w-md flex flex-col justify-center items-center lg:items-start p-2 gap-4 hover:shadow-2xl cursor-pointer">
+                <div class="max-w-md flex flex-col justify-center items-center lg:items-start p-2 gap-4 ">
                     <img class="w-md" src="/img/subscription.webp" alt="">
                     <h3 class="font-bold text-lg"> <span class="text-xl fa-solid fa-money-check-dollar"></span> No fee transaction</h3>
                     <p class="text-sm">Pay no fees when you transact on Dribbble (non-Pro users <br> pay 3.5% of earnings).</p>
                 </div>
-                <div class="max-w-md flex flex-col justify-center items-center lg:items-start p-2 gap-4 hover:shadow-2xl cursor-pointer">
+                <div class="max-w-md flex flex-col justify-center items-center lg:items-start p-2 gap-4 ">
                     <img class="w-md" src="/img/projrcts-list.webp" alt="">
                     <h3 class="font-bold text-lg"> <span class="text-xl fa-solid fa-list"></span> Recommended to clients</h3>
                     <p class="text-sm" >Show up as a recommended designer for clients ready <br> to hire now.</p>
                 </div>
-                <div class="max-w-md flex flex-col justify-center items-center lg:items-start p-2 gap-4 hover:shadow-2xl cursor-pointer">
+                <div class="max-w-md flex flex-col justify-center items-center lg:items-start p-2 gap-4 ">
                     <img class="w-md" src="/img/self-work-pay.webp" alt="">
                     <h3 class="font-bold text-lg"> <span class="text-xl fa-solid fa-hand-holding-dollar"></span> Advanced Profile Features</h3>
                     <p class="text-sm" >Convert more leads by presenting yourself and your work in <br> the best light.</p>
                 </div>
                 
-                <div class="max-w-md flex flex-col justify-center items-center lg:items-start p-2 gap-4 hover:shadow-2xl cursor-pointer">
+                <div class="max-w-md flex flex-col justify-center items-center lg:items-start p-2 gap-4 ">
                     <img class="w-md" src="/img/webflow-free.webp" alt="">
                     <h3 class="font-bold text-lg"> <span class="text-xl fa-regular fa-circle-check"></span> Webflow for Free</h3>
                     <p class="text-sm" >Get 12 months free of Webflow’s Freelancer ($192 value) or <br> Agency ($420 value) plans.</p>
                 </div>
             </div>
-            <button id="scrollLeftButton" onclick="scrollLeft()" class="hidden absolute p-4 rounded-[50%] bg-gray-300 opacity-70"
-              aria-label="Scroll left">
-                <span class="origin-center rotate-90 fa-solid fa-chevron-down text-3xl text-black"></span>
-            </button>
-            <button aria-label="Scroll right"  id="scrollRightButton"  onclick="scrollRight()" class="absolute p-4 rounded-[50%] bg-gray-300 right-0 bottom-[40%] opacity-70">
+            <div class=" absolute left-1/2 top-0 bottom-0 p-4 bg-white/80 blur-xl shadow-[8px_0_25px_rgba(255,255,255,0.8)] cursor-pointer transition-shadow duration-300">
+                <span class="pointer-events-none bg-white/40 blur-xl"></span>
+            </div>
+            <button id="relative scrollLeftButton" onclick="scrollLeft()" aria-label="Scroll left">
+            <span class="absolute z-20 origin-center rotate-90 fa-solid fa-chevron-down text-3xl text-black"></span>
+        </button>
+            <button aria-label="Scroll right"  id="scrollRightButton"  onclick="scrollRight()" 
+                class="absolute p-4 shadow-[-8px_0_0_rgba(0,0,0,0.25)] bg-gray-50 right-0 top-0 bottom-0 cursor-pointer transition-shadow duration-300 hover:shadow-[-8px_0_16px_rgba(0,0,0,0.35)]">
                 <span class=" origin-center -rotate-90 fa-solid fa-chevron-down text-3xl text-black"></span>
             </button >
+            
+</button>
+
         </section>
         <script src="index.js">
          
